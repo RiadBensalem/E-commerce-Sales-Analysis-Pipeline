@@ -1,0 +1,1 @@
+docker run -d -p 18123:8123 -p 19000:9000 -v /home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/clickhouse/data:/var/lib/clickhouse/ -v /home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/clickhouse/logs:/var/log/clickhouse-server/ --name e-commerce-analysis-clickhouse-server --ulimit nofile=262144:262144 clickhouse/clickhouse-server
