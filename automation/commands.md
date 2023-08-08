@@ -23,5 +23,5 @@ docker run -d -p 18123:8123 -p 19000:9000 -v /home/oem/Documents/Learning/E-comm
 
 # Grafana
 ```
-docker run -d -p 3000:3000 --name=grafana   --user "$(id -u)"   --volume "/home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/grafana/data:/var/lib/grafana"   grafana/grafana-enterprise
+docker run -d -p 3000:3000 --name=grafana -e "GF_INSTALL_PLUGINS=grafana-clock-panel, grafana-simple-json-datasource, grafana-worldmap-panel, grafana-clickhouse-datasource" --user "$(id -u)"   --volume "/home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/grafana/data:/var/lib/grafana"   grafana/grafana-enterprise
 ```
