@@ -20,3 +20,8 @@ docker pull clickhouse/clickhouse-server
 ```
 docker run -d -p 18123:8123 -p 19000:9000 -v /home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/clickhouse/data:/var/lib/clickhouse/ -v /home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/clickhouse/logs:/var/log/clickhouse-server/ --name e-commerce-analysis-clickhouse-server --ulimit nofile=262144:262144 clickhouse/clickhouse-server
 ```
+
+# Grafana
+```
+docker run -d -p 3000:3000 --name=grafana   --user "$(id -u)"   --volume "/home/oem/Documents/Learning/E-commerce-Sales-Analysis-Pipeline/grafana/data:/var/lib/grafana"   grafana/grafana-enterprise
+```
