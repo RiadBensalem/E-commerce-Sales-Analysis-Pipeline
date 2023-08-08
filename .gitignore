@@ -162,3 +162,6 @@ cython_debug/
 #ClickHouse
 clickhouse/logs/**
 clickhouse/data/**
+
+#Grafana
+grafana/data/**
