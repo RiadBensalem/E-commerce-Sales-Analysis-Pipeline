@@ -165,3 +165,6 @@ clickhouse/data/**
 
 #Grafana
 grafana/data/**
+
+#testing area
+testing/**
