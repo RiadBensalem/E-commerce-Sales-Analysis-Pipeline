@@ -7,10 +7,34 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.3/docker-compose.y
 mkdir -p ./dags ./logs ./plugins ./config
 echo -e "AIRFLOW_UID=$(id -u)" > .env
 docker compose up airflow-init
+```
+[to install additional needed python packages (like clickHouse client) follow this link ](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#special-case-adding-dependencies-via-requirements-txt-file)
+```
+touch Dockerfile
+nano Dockerfile
+```
+
+```
+touch requirements.txt
+nano requirements.txt
+```
+
+```
+nano docker-compose.yaml
+```
+
+```
+docker compose build
 docker compose up
 
 ```
 
+```
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.3/airflow.sh'
+chmod +x airflow.sh
+```
+install clickhouse-connect
+```
 # ClickHouse
 
 ```
