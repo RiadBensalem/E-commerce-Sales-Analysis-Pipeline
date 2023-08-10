@@ -33,8 +33,7 @@ docker compose up
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.3/airflow.sh'
 chmod +x airflow.sh
 ```
-install clickhouse-connect
-```
+
 # ClickHouse
 
 ```
