@@ -16,7 +16,10 @@ Create an advanced data engineering pipeline that processes and analyzes sales d
 - Design and implement Airflow DAGs (Directed Acyclic Graphs) to orchestrate data extraction, transformation, and loading processes.
 - Schedule DAG runs to process data at regular intervals (e.g., daily or weekly).
 ## 5. Data Visualization:
-- Use data visualization tools like Matplotlib, Seaborn, or Plotly to create insightful visualizations, showcasing sales trends, customer behavior, and other important metrics.
+- Use Grafana and other python libraries to create insightful visualizations, showcasing sales trends, customer behavior, and other important metrics.
+  ![dashboard-1](./images/dashboard-1.png)
+  
+  ![dashboard-2](./images/dashboard-2.png)
 ## 6. Automation with Ansible:
 - Implement Ansible playbooks to automate the deployment and configuration of the ClickHouse database and Apache Airflow on a server or cloud platform.
 - Use Ansible to manage the project's infrastructure and dependencies efficiently.
